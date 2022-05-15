@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     // var _date = DateTime(2022, 05, 16);
-    var _date = DateTime(2022, 05, 16, 25, 50);
+    var _date = DateTime(2022, 05, 15, 16, 30);
     super.initState();
     Timer.periodic(const Duration(seconds: 1), (timer){
       var _now = DateTime.now();

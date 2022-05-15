@@ -45,18 +45,23 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     // var _date = DateTime(2022, 05, 16);
-    var _date = DateTime(2022, 05, 15, 16, 30);
+    var _date = DateTime(2022, 05, 15, 16, 38);
+    updateCount(_date);
     super.initState();
     Timer.periodic(const Duration(seconds: 1), (timer){
-      var _now = DateTime.now();
-      var _diff = _date.toUtc().millisecondsSinceEpoch - _now.toUtc().millisecondsSinceEpoch;
-      setState(() {
-        _counter = _diff ~/ 1000;
-        if(_counter <= 0){
-          timer.cancel();
-          Navigator.pushNamed(context, '/congrat');
-        }
-      });
+      updateCount(_date);
+      if(_counter <= 0){
+        timer.cancel();
+        Navigator.pushNamed(context, '/congrat');
+      }
+    });
+  }
+
+  void updateCount(DateTime _date) {
+     var _now = DateTime.now();
+    var _diff = _date.toUtc().millisecondsSinceEpoch - _now.toUtc().millisecondsSinceEpoch;
+    setState(() {
+      _counter = _diff ~/ 1000;
     });
   }
 

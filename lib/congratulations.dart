@@ -8,6 +8,15 @@ class CongratPage extends StatefulWidget {
 }
 
 class _CongratPageState extends State<CongratPage> {
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 5), (){
+      Navigator.pushNamed(context, '/message');
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     const backgroundColor = Colors.black;

@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:dalila_amor/congratulations.dart';
+import 'package:dalila_amor/message.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/home',
       routes: {
         '/home': (context) => const MyHomePage(title: 'Dalila Amorzinho'),
-        '/congrat': (context) => const CongratPage()
+        '/congrat': (context) => const CongratPage(),
+        '/message': (message) => const MessagePage()
       },
     );
   }
@@ -43,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     // var _date = DateTime(2022, 05, 16);
-    var _date = DateTime(2022, 05, 15, 14, 50);
+    var _date = DateTime(2022, 05, 16, 25, 50);
     super.initState();
     Timer.periodic(const Duration(seconds: 1), (timer){
       var _now = DateTime.now();

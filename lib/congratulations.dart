@@ -12,7 +12,7 @@ class _CongratPageState extends State<CongratPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 5), (){
+    Future.delayed(const Duration(seconds: 10), (){
       Navigator.pushNamed(context, '/message');
     });
   }

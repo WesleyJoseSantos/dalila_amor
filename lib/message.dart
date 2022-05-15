@@ -8,8 +8,7 @@ class MessagePage extends StatefulWidget {
 }
 
 class _MessagePageState extends State<MessagePage> {
-  final message =
-'''O céu noturno, certamente é uma das formas mais 
+  final message = '''O céu noturno, certamente é uma das formas mais 
 belas que o universo possui, de materializar diante 
 dos nossos olhos uma lição de humildade. Não é 
 incomum ao admirarmos sua grandeza, sermos 
@@ -45,20 +44,19 @@ que para mim o céu é pequeno perto de ti.''';
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          'assets/amor.jpg',
-                          filterQuality: FilterQuality.high,
-                          isAntiAlias: true,
-                          height: 500,
-                          width: 500,
-                        ),
-                        Text(message,
-                            style: const TextStyle(
-                                color: Colors.white, fontSize: 30)),
-                      ],
+                    child: Image.asset(
+                      'assets/amor.jpg',
+                      filterQuality: FilterQuality.high,
+                      isAntiAlias: true,
+                      height: 400,
+                      width: 400,
                     ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(message,
+                        style:
+                            const TextStyle(color: Colors.white, fontSize: 30)),
                   ),
                 ],
               ),

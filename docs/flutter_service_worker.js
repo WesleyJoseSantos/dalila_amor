@@ -3,7 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "c69bc0a58d38445cf1a5bf6187732f44",
+  "assets/AssetManifest.json": "5bbfd097cdff265d1a8dc3cc85ee4248",
+"assets/assets/amor.jpg": "d9fd310efcdc5fce877de3bb94752a3f",
 "assets/assets/fire.gif": "85767988bef1450f3b642bd7bff9d74c",
 "assets/assets/fireworks.gif": "fb4bf78a5bc230e2b1f35324982718a7",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
@@ -19,9 +20,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "d7c910ff4baf3d752c8628e000c93ddf",
-"/": "d7c910ff4baf3d752c8628e000c93ddf",
-"main.dart.js": "9b0f54abe075cd9a9c5f1b834ab1931d",
+"index.html": "8f0ee69940386ef1ad3c49243ad7c1d8",
+"/": "8f0ee69940386ef1ad3c49243ad7c1d8",
+"main.dart.js": "439999d6c8be7b792d5cf6aa6cd7e82d",
 "manifest.json": "0a7af4b1f5092079d39959285a552f70",
 "version.json": "0fe98452027128aa8e066d2b21417f16"
 };
